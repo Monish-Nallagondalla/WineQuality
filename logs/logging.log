@@ -64,3 +64,31 @@ x==========x]
 [2025-06-05 20:49:15,674: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2025-06-05 22:15:14,092: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-05 22:15:14,092: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-05 22:15:14,109: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-05 22:15:14,111: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-05 22:15:14,112: INFO: common: created directory at: artifacts]
+[2025-06-05 22:15:14,113: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-05 22:15:14,113: INFO: data_ingestion: File already exists]
+[2025-06-05 22:15:14,120: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-06-05 22:15:14,120: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-06-05 22:15:14,126: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-05 22:15:14,127: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-05 22:15:14,127: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-05 22:15:14,127: INFO: common: created directory at: artifacts]
+[2025-06-05 22:15:14,127: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-05 22:15:14,155: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-06-05 22:15:14,155: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-06-05 22:15:14,168: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-05 22:15:14,168: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-05 22:15:14,176: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-05 22:15:14,178: INFO: common: created directory at: artifacts]
+[2025-06-05 22:15:14,178: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-05 22:15:14,179: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
