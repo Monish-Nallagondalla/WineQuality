@@ -572,3 +572,105 @@ x==========x]
 [2025-06-06 02:20:32,490: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
 
 x==========x]
+[2025-06-06 02:24:33,557: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-06 02:24:33,562: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-06 02:24:33,563: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-06 02:24:33,566: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-06 02:24:33,567: INFO: common: created directory at: artifacts]
+[2025-06-06 02:24:33,568: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-06 02:24:33,568: INFO: data_ingestion: File already exists]
+[2025-06-06 02:24:33,572: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-06-06 02:24:33,573: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-06-06 02:24:33,577: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-06 02:24:33,579: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-06 02:24:33,581: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-06 02:24:33,582: INFO: common: created directory at: artifacts]
+[2025-06-06 02:24:33,583: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-06 02:24:33,608: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-06-06 02:24:33,609: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-06-06 02:24:33,615: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-06 02:24:33,617: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-06 02:24:33,619: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-06 02:24:33,620: INFO: common: created directory at: artifacts]
+[2025-06-06 02:24:33,621: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-06 02:24:33,642: INFO: data_transformation: Splited data into training and test sets]
+[2025-06-06 02:24:33,642: INFO: data_transformation: (1199, 12)]
+[2025-06-06 02:24:33,643: INFO: data_transformation: (400, 12)]
+[2025-06-06 02:24:33,643: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-06-06 02:24:33,643: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-06-06 02:24:33,647: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-06 02:24:33,648: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-06 02:24:33,651: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-06 02:24:33,652: INFO: common: created directory at: artifacts]
+[2025-06-06 02:24:33,652: INFO: common: created directory at: artifacts/model_trainer]
+[2025-06-06 02:24:33,683: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-06-06 02:24:33,683: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2025-06-06 02:24:33,689: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-06 02:24:33,690: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-06 02:24:33,693: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-06 02:24:33,694: INFO: common: created directory at: artifacts]
+[2025-06-06 02:24:33,695: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-06-06 02:24:34,963: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2025-06-06 02:24:43,242: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]
+[2025-06-06 03:19:54,345: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.6:8080]
+[2025-06-06 03:19:54,351: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-06 03:20:02,828: ERROR: app: Exception on / [GET]]
+Traceback (most recent call last):
+  File "C:\Users\MONISH\OneDrive\Documents\Data_science 2024\Udemy_MLOPS_bootcamp\Projects\WineQuality\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\MONISH\OneDrive\Documents\Data_science 2024\Udemy_MLOPS_bootcamp\Projects\WineQuality\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\MONISH\OneDrive\Documents\Data_science 2024\Udemy_MLOPS_bootcamp\Projects\WineQuality\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\MONISH\OneDrive\Documents\Data_science 2024\Udemy_MLOPS_bootcamp\Projects\WineQuality\venv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\MONISH\OneDrive\Documents\Data_science 2024\Udemy_MLOPS_bootcamp\Projects\WineQuality\app.py", line 12, in homePage
+    return render_template("index.html")
+  File "C:\Users\MONISH\OneDrive\Documents\Data_science 2024\Udemy_MLOPS_bootcamp\Projects\WineQuality\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\MONISH\OneDrive\Documents\Data_science 2024\Udemy_MLOPS_bootcamp\Projects\WineQuality\venv\lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\MONISH\OneDrive\Documents\Data_science 2024\Udemy_MLOPS_bootcamp\Projects\WineQuality\venv\lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\MONISH\OneDrive\Documents\Data_science 2024\Udemy_MLOPS_bootcamp\Projects\WineQuality\venv\lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\MONISH\OneDrive\Documents\Data_science 2024\Udemy_MLOPS_bootcamp\Projects\WineQuality\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\MONISH\OneDrive\Documents\Data_science 2024\Udemy_MLOPS_bootcamp\Projects\WineQuality\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\MONISH\OneDrive\Documents\Data_science 2024\Udemy_MLOPS_bootcamp\Projects\WineQuality\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2025-06-06 03:20:02,837: INFO: _internal: 127.0.0.1 - - [06/Jun/2025 03:20:02] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2025-06-06 03:20:03,130: INFO: _internal: 127.0.0.1 - - [06/Jun/2025 03:20:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-06-06 03:21:24,507: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.6:8080]
+[2025-06-06 03:21:24,508: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-06 03:21:29,388: INFO: _internal: 127.0.0.1 - - [06/Jun/2025 03:21:29] "GET / HTTP/1.1" 200 -]
+[2025-06-06 03:21:29,440: INFO: _internal: 127.0.0.1 - - [06/Jun/2025 03:21:29] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -]
+[2025-06-06 03:21:55,509: INFO: _internal: 127.0.0.1 - - [06/Jun/2025 03:21:55] "POST /predict HTTP/1.1" 200 -]
+[2025-06-06 03:22:53,817: INFO: _internal: 127.0.0.1 - - [06/Jun/2025 03:22:53] "POST /predict HTTP/1.1" 200 -]
+[2025-06-06 03:22:58,578: INFO: _internal: 127.0.0.1 - - [06/Jun/2025 03:22:58] "POST /predict HTTP/1.1" 200 -]
+[2025-06-06 03:23:04,304: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.6:8080]
+[2025-06-06 03:23:04,304: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-06 03:23:07,990: INFO: _internal: 127.0.0.1 - - [06/Jun/2025 03:23:07] "GET / HTTP/1.1" 200 -]
+[2025-06-06 03:23:08,428: INFO: _internal: 127.0.0.1 - - [06/Jun/2025 03:23:08] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -]
+[2025-06-06 03:23:34,677: INFO: _internal: 127.0.0.1 - - [06/Jun/2025 03:23:34] "POST /predict HTTP/1.1" 200 -]

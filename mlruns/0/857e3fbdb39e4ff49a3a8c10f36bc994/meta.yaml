@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/MONISH/OneDrive/Documents/Data_science%202024/Udemy_MLOPS_bootcamp/Projects/WineQuality/mlruns/0/857e3fbdb39e4ff49a3a8c10f36bc994/artifacts
+end_time: 1749156883239
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 857e3fbdb39e4ff49a3a8c10f36bc994
+run_name: judicious-pug-253
+run_uuid: 857e3fbdb39e4ff49a3a8c10f36bc994
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749156874861
+status: 3
+tags: []
+user_id: MONISH
